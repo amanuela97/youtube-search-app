@@ -1,0 +1,140 @@
+:root{
+    --secondary-color: #4e5052;
+    --background-light-color: #F1F1F1;
+}    
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;   
+    background-color: var(--background-light-color); 
+}
+
+.TopBar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.search, form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border: 1px solid var(--secondary-color);
+    padding: 0 20px;
+    height: 60%;
+    width: 40%;
+}
+
+button {
+    border: 1px solid var(--secondary-color);
+    height: 60%;
+    width: 50px;
+    padding: 5px;
+}
+
+
+.content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.video-list { 
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    width: 35%;
+}
+
+.video-player {
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    width: 65%;
+}
+
+.video-iframe {
+    height: 25%;
+    width: 95%;
+}
+
+h3 {
+    text-align: center;
+    font-size:  18px;
+    font-weight: bold;
+}
+
+.video-player-title {
+    display: flex; 
+    padding: 20px 0;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    width: 65%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .content {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .video-player {
+        display: flex;
+        padding: 20px 0;
+        justify-content: center;
+        width: 100%;
+        height: 400px;
+    }
+    
+    .video-iframe {
+        height: 100%;
+        width: 95%;
+    }
+    
+    .video-list { 
+        display: flex;
+        padding: 20px 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    input {
+        border: 1px solid var(--secondary-color);
+        padding: 0 20px;
+        height: 80%;
+        width: 80%;
+    }
+
+    button {
+        border: 1px solid var(--secondary-color);
+        height: 80%;
+        width: 50px;
+        padding: 5px;
+    }
+
+    .video-player-title {
+        display: flex; 
+        padding: 20px 0;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: bold;
+        width: 100%;
+    }
+    
+}
