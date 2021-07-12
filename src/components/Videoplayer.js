@@ -14,6 +14,7 @@ const Videoplayer = ({ videoId }) => {
         title={videoId}
         className="video-iframe"
         src={`https://www.youtube.com/embed/${videoId}`}
+        allowFullScreen={true}
       />
     </div>
   );

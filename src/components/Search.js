@@ -14,9 +14,12 @@ function Search(props) {
         event.preventDefault();
         props.onSearch(title);
     };
+
+
+
     return (
         <div className="search">
-           <ImYoutube2 color="red" size="5em" style={{marginLeft: "5%"}}/>  
+           <ImYoutube2 color="red" size="5em" style={{marginLeft: "5%", cursor: "pointer"}} onClick={()=> window.location.reload()}/>  
            <form onSubmit={onSumbit}> 
             <input 
                 autoFocus={true}
